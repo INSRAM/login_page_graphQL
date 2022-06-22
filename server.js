@@ -1,8 +1,8 @@
 require("dotenv").config();
 const express = require("express");
 const mongoose = require("mongoose");
-const typeDefs = require("./graphQL/typeDefs.js");
-const resolvers = require("./graphQL/resolvers.js");
+const typeDefs = require("./controller/typeDefs.js");
+const resolvers = require("./controller/resolvers.js");
 const { ApolloServer } = require("apollo-server-express");
 
 const Port = process.env.Port;
